@@ -4,7 +4,6 @@ namespace App\Service;
 
 class MenuService
 {
-
     public static function getMenu($menuRepository): array
     {
         $menus = $menuRepository->findBy([
@@ -32,7 +31,6 @@ class MenuService
             //echo count($sub_menus)."<br>";
             $sub_menus_count = count($sub_menus);
             foreach ($sub_menus as $sub_menu) {
-                // echo "parent_id:: ".$parent_id."bbb:: ".$sub_menu->getName()."<br>";
                 $key = self::getJSONData($sub_menu->getRouteParams());
                 $subMenuLevelTwo[$key] = $sub_menu->getName();
             }
