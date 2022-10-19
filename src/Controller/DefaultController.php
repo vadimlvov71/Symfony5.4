@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @author Andrei Lupuleasa
- * Date: 23-03-2018
- * Vers: 1
- */
-
 namespace App\Controller;
 
 use App\Repository\ArticleRepository;
